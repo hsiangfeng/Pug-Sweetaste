@@ -1,0 +1,20 @@
+mixin link(name,url)
+	if(path === url)
+		li.nav-item.active
+			a.nav-link.p-4(href=url)
+				| #{name}
+	else
+		li.nav-item
+			a.nav-link.p-4(href=url)
+				| #{name}
+
+nav.navbar.navbar-expand-lg.navbar-light
+	a.navbar-brand(href='#') 
+		h1.logo
+			| 甜點電商
+	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+		span.navbar-toggler-icon
+	#navbarNavDropdown.collapse.navbar-collapse
+		ul.navbar-nav.ml-auto
+			each item in menu.list
+				+link(item.name,item.url)
