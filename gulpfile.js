@@ -50,7 +50,10 @@ gulp.task('sass', function () {
     return gulp.src('./source/scss/**/*.scss')
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
-        .pipe($.sass().on('error', $.sass.logError))
+        .pipe($.sass({
+            outputStyle:'nested',
+            includePaths :['./node_modules/bootstrap/sass']
+        }).on('error', $.sass.logError))
         //壓縮CSS
         .pipe($.postcss(plugins))
         //壓縮CSS
