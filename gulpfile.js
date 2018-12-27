@@ -52,7 +52,7 @@ gulp.task('sass', function () {
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             outputStyle:'nested',
-            includePaths :['./node_modules/bootstrap/sass']
+            includePaths :['./node_modules/bootstrap/']
         }).on('error', $.sass.logError))
         //壓縮CSS
         .pipe($.postcss(plugins))
