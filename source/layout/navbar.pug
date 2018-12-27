@@ -1,11 +1,11 @@
 mixin link(name,url)
 	if(path === url)
-		li.nav-item.active
-			a.nav-link.p-4(href=url)
+		li.nav-item
+			a.nav-link.nav-link-sweet.active.p-4(href=url)
 				| #{name}
 	else
 		li.nav-item
-			a.nav-link.p-4(href=url)
+			a.nav-link.nav-link-sweet.p-4(href=url)
 				| #{name}
 
 nav.navbar.navbar-expand-lg.navbar-light
