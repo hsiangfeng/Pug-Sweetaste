@@ -1,21 +1,35 @@
+@import "functions";
+@import "variables";
+@import "mixins";
 @import "bootstrap";
 
-$hex-sweet:#3F5D45;
-.logo{
-    background-image:url(/images/logo-all-dark.svg);
-    height: 100px;
-    width: 219px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden;
-    text-indent: 101%;
-    white-space: nowrap;
-}
-.nav-link-sweet{
-    color:$hex-sweet !important;
+/*layout*/
+.topmain{
     font-weight: bold;
-    &:hover,&.active{
-        color:$white !important;
+    color:$hex-sweet !important;
+    &:hover{
         background-color: $hex-sweet;
+        color:$white !important;
+    }
+    &.active{
+        background-color: $hex-sweet;
+        color:$white !important;
+    }
+}
+.footer{
+    background-color: $sweet-cover;
+    .subscription{
+        background-color: $hex-sweet;
+    }
+    input{
+        border:0px !important;
+    }
+    .input-group-text{
+        background-color:$white !important;
+        color:$hex-sweet;
+    }
+    .copyright{
+        color:$hex-sweet;
+        
     }
 }
