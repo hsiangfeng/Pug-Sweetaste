@@ -1,0 +1,6 @@
+@import "mixin";
+.login-banner{
+    background-image: url(/images/banner/banner-3.jpg);
+    @include bg-cover();
+    height: 496px;
+}

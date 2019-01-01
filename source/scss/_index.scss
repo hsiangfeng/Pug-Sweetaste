@@ -1,0 +1,7 @@
+@import "mixin";
+.banner{
+    background-image: url(/images/banner/banner.jpg);
+    @include bg-cover();
+    height: 496px;
+}
+
