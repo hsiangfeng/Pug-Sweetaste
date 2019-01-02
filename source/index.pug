@@ -3,17 +3,39 @@ block navbar
     - var path = 'index.html'
     include layout/navbar.pug
 block content
-    .banner
-    .row.d-flex.justify-content-center.allig-item.center.text-center
-        .col-md-10
+    section.container
+        .banner
+        .row.d-flex.justify-content-center.align-items-center
+            .col-md-8
+                .row.no-gutters.banner-btn
+                    a.col-4(href="#")
+                        .banner-btn-bg.active.d-flex.justify-content-center.align-items-center 今日推薦
+                        .banner-bg-today
+                    a.col-4(href="#")
+                        .banner-btn-bg.d-flex.justify-content-center.align-items-center 人氣推薦
+                        .banner-bg-hot
+                    a.col-4(href="#")
+                        .banner-btn-bg.d-flex.justify-content-center.align-items-center 新品上市
+                        .banner-bg-new
+    
+    section
+        .container
             .row
-                a.col-md-4(href="#")
-                    | 今日推薦
-                a.col-md-4(href="#")
-                    | 人氣推薦
-                a.col-md-4(href="#")
-                    | 新品上市
-    p
-        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet tempora alias nisi aut explicabo minus commodi culpa corporis ex delectus, eveniet nesciunt vero autem aliquam eligendi necessitatibus aperiam natus nam.
+                .col-md-6.d-md-none.reason1-md.d-flex.justify-content-center
+                            img(src="/images/sm-橫式-為什麼選擇了做甜點.svg", alt="").img-fluid.my-6
+        .reason1
+            .container
+                .row
+                    .col-md-6.reason1-bg
+                        .reason1-img
+                    .col-md-6.reason1-bg
+                        .reason1-text
+                            p 青山依舊在，幾度夕陽紅。慣看秋月春風。
+                            br
+                            p 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                            br
+                            p 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                        img(src="/images/lg-為什麼選擇了做甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block
+    br
 block footer
     include layout/footer.pug

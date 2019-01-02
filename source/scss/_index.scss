@@ -4,4 +4,68 @@
     @include bg-cover();
     height: 496px;
 }
+.banner-bg-today{
+    position: relative;
+    background-image: url(/images/btn-main/btn-main-1.jpeg);
+    @include banner-btn-bg();
+}
+.banner-bg-hot{
+    background-image: url(/images/btn-main/btn-main-2.jpeg);
+    @include banner-btn-bg();
+}
+.banner-bg-new{
+    background-image: url(/images/btn-main/btn-main-3.jpeg);
+    @include banner-btn-bg();
+}
+.banner-btn{
+    overflow: hidden;
+    transform: translateY(-60px);//也可以使用margin-top:-60px;
+    @media (max-width:768px) {
+        transform: translateY(0px)
+    }
+}
+.banner-btn-bg{
+    background-color: $hex-sweet;
+    opacity: .85;
+    @include banner-text-vertical();
+    @include banner-position();
+    transition: all .3s;
+    &:hover,&.active{
+        background-color: $sweet;
+        color:$hex-sweet;
+        opacity: .8;
+    }
+}
+.reason1{
+    background-color: #EAF0ED;
+    position: relative;
+    .reason1-bg{
+        max-height: 420px;
+    }
+    .reason1-text{
+        position: absolute;
+        padding: 32px 0;
+        letter-spacing: 10px;
+        writing-mode: vertical-rl;
+        color:$hex-sweet;
+        line-height: 26px;
+        right: 200px;
+        @media (max-width:768px){
+            position: relative;
+            writing-mode: horizontal-tb;
+            right: 0px;
+        }
+    }
+    .reason1-img{
+        background-image: url(/images/reason1.jpg);
+        @include bg-cover();
+        height: 460px;
+        max-width: 460px;
+        transform: translateY(-20px);
+    }
+    img{
+        right: 40px;
+        position: absolute;
+    }
+}
 
