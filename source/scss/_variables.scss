@@ -783,7 +783,7 @@ $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  $hex-sweet;//$link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-color:           $gray-300 !default;
@@ -796,7 +796,7 @@ $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
 $pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-bg:              $hex-sweet;//$component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
@@ -990,14 +990,14 @@ $list-group-item-padding-y:         .75rem !default;
 $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-color:           $hex-sweet;//$component-active-color !default;
+$list-group-active-bg:              $sweet-cover;//$component-active-bg !default;
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
 
-$list-group-action-color:           $gray-700 !default;
+$list-group-action-color:           $hex-sweet;//$gray-700 !default;
 $list-group-action-hover-color:     $list-group-action-color !default;
 
 $list-group-action-active-color:    $body-color !default;
