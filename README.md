@@ -1,5 +1,5 @@
 # Pug-Sweetaste
-使用Bootstrap+gulp+Scss開發  
+使用Bootstrap4+gulp4+Scss開發  
 網址:  
 https://hsiangfeng.github.io/Pug-Sweetaste/  
 設計稿:  
