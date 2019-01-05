@@ -1,40 +1,41 @@
 block footer
     section.footer
-        .subscription
+        .bg-hex-sweet
             .container
                 .row
                     .col-md-8.p-5.font-weight-bold.d-flex.align-items-center
-                        img(src="/images/logo-light.svg", alt="" height="40px" width="40px")
+                        img(src="./images/logo-light.svg", alt="" height="40px" width="40px")
                         span.text-white.mx-3.h4.mb-0 訂閱你我的甜蜜郵件
                     .col-md-4.p-5
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-envelope"></i></div>
-                            </div>
-                            <input type="text" class="form-control form-control-lg rounded-0" id="inlineFormInputGroupUsername2" placeholder="Email">
-                            <button type="submit" class="btn btn-sweet btn-lg rounded-0"><i class="fas fa-arrow-right"></i></button>
-                        </div>
+                        .input-group
+                            .input-group-prepend
+                                .input-group-text.bg-sweet-cover
+                                    i.fas.fa-envelope
+                            input#inlineFormInputGroupUsername2.form-control.form-control-lg.rounded-0.border-0.bg-sweet-cover(type='text', placeholder='Email')
+                            button.btn.btn-sweet.btn-lg.rounded-0(type='submit')
+                                i.fas.fa-arrow-right
+
         .footers.container
-            .row.py-5
-                .col-6.d-flex.justify-content-between.flex-column
-                    img(src="/images/logotype-sm-dark.svg", alt="" width="171.22px")
-                    ul.list-unstyled.footers-text
+            .row.py-md-5
+                .col-12.col-md-6.d-flex.justify-content-between.flex-column
+                    img.py-6.py-md-4(src="./images/logotype-sm-dark.svg", alt="" width="171.22px")
+                    ul.list-unstyled.text-hex-sweet
                         li
                             | 07-1234-5678
                         li
-                            a(href="http://")
+                            a(href="sweetaste@email.com").text-hex-sweet
                                 | sweetaste@email.com
                         li
                             | 800 高雄市新興區幸福路 520 號
-                .col-6.text-right
-                    img(src="/images/sm-今天是個吃甜點的好日子.svg", alt="" width="59.28px" height="218.69px")
+                .col-12.col-md-6.text-right.d-none.d-md-block
+                    img(src="./images/sm-今天是個吃甜點的好日子.svg", alt="" width="59.28px" height="218.69px")
             .row.py-3
-                .col-6
-                    img(src="/images/ic-facebook.svg", alt="" width="32px" height="32px")
+                .col-md-6
+                    img(src="./images/ic-facebook.svg", alt="" width="32px" height="32px")
                     | 
-                    img(src="/images/ic-line@.svg", alt="" width="32px" height="32px")
-                .col-6.d-flex.justify-content-end.align-items-center
-                    .copyright
+                    img(src="./images/ic-line@.svg", alt="" width="32px" height="32px")
+                .col-md-6.d-flex.justify-content-md-end.align-items-center
+                    .text-hex-sweet
                         | © 2018 Sweetaste* All Rights Reserved
         
 

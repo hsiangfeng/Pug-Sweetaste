@@ -24,12 +24,10 @@ gulp.task('clean', function () {
 gulp.task('pug', function buildHTML() {
     return gulp.src('./source/*.pug')
         .pipe($.plumber())
-        .pipe($.data(function(){
-            //let khData = require('./source/data/data.json');
+        .pipe($.data(function () {
             let menu = require('./source/data/menu.json');
             let source = {
-                //'khData':khData,
-                'menu':menu
+                'menu': menu
             };
             return source;
         }))
@@ -51,8 +49,8 @@ gulp.task('sass', function () {
         .pipe($.plumber())
         .pipe($.sourcemaps.init())
         .pipe($.sass({
-            outputStyle:'nested',
-            includePaths :['./node_modules/bootstrap/scss']
+            outputStyle: 'nested',
+            includePaths: ['./node_modules/bootstrap/scss']
         }).on('error', $.sass.logError))
         //壓縮CSS
         .pipe($.postcss(plugins))
@@ -64,7 +62,7 @@ gulp.task('sass', function () {
 });
 //JS編譯
 gulp.task('babel', () =>
-    gulp.src('./source/js/**/*.js')
+    gulp.src(['./source/js/**/jquery-3.3.1.min.js', './source/js/**/*.js'])
         .pipe($.sourcemaps.init())
         .pipe($.babel({
             presets: ['@babel/env']
@@ -83,7 +81,7 @@ gulp.task('babel', () =>
 );
 //壓縮image
 gulp.task('image-min', () =>
-    gulp.src('./source/images/*')
+    gulp.src(['./source/images/*','./source/images/*/**'])
         .pipe($.if(options.env === 'prod', $.image()))
         .pipe(gulp.dest('./public/images'))
 );
@@ -96,9 +94,13 @@ gulp.task('browser-sync', function () {
         }
     });
 });
+gulp.task('deploy', function () {
+    return gulp.src('./public/**/*')
+        .pipe($.ghPages());
+});
 
 //watch
-gulp.task('watch',gulp.parallel('browser-sync', function () {
+gulp.task('watch', gulp.parallel('browser-sync', function () {
     gulp.watch('./source/**/*.pug', gulp.series('pug'));
     gulp.watch('./source/scss/*.scss', gulp.series('sass'));
     gulp.watch('./source/js/*.js', gulp.series('babel'));
@@ -107,4 +109,4 @@ gulp.task('watch',gulp.parallel('browser-sync', function () {
 gulp.task('bulid', gulp.series($.sequence('clean', 'pug', 'sass', 'babel', 'image-min')))
 //4.0要加入gulp.series
 //default gulp
-gulp.task('default', gulp.series('pug', 'sass', 'babel', 'image-min' ,'watch'))
+gulp.task('default', gulp.series('pug', 'sass', 'babel', 'image-min', 'watch'))

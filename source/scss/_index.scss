@@ -1,20 +1,20 @@
 @import "mixin";
 .banner{
-    background-image: url(/images/banner/banner.jpg);
+    background-image: url(../images/banner/banner.jpg);
     @include bg-cover();
     height: 496px;
 }
 .banner-bg-today{
     position: relative;
-    background-image: url(/images/btn-main/btn-main-1.jpeg);
+    background-image: url(../images/btn-main/btn-main-1.jpeg);
     @include banner-btn-bg();
 }
 .banner-bg-hot{
-    background-image: url(/images/btn-main/btn-main-2.jpeg);
+    background-image: url(../images/btn-main/btn-main-2.jpeg);
     @include banner-btn-bg();
 }
 .banner-bg-new{
-    background-image: url(/images/btn-main/btn-main-3.jpeg);
+    background-image: url(../images/btn-main/btn-main-3.jpeg);
     @include banner-btn-bg();
 }
 .banner-btn{
@@ -40,6 +40,10 @@
 .hex-candy{
     padding-top: 50px;
     padding-bottom: 50px;
+    @media (max-width:768px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 .reason1{
     background-color: #EAF0ED;
@@ -49,7 +53,7 @@
     }
     .reason1-text{
         position: absolute;
-        padding: 3% 0;
+        padding: 3% 15px;
         letter-spacing: 10px;
         writing-mode: vertical-rl;
         color:$hex-sweet;
@@ -62,7 +66,7 @@
         }
     }
     .reason1-img{
-        background-image: url(/images/reason1.jpg);
+        background-image: url(../images/reason1.jpg);
         @include bg-cover();
         height: 460px;
         transform: translateY(-20px);
@@ -88,7 +92,7 @@
     }
     .reason2-text{
         position: absolute;
-        padding: 3% 0;
+        padding: 3% 15px;
         letter-spacing: 10px;
         writing-mode: vertical-rl;
         color:$hex-sweet;
@@ -101,7 +105,7 @@
         }
     }
     .reason2-img{
-        background-image: url(/images/reason2.jpg);
+        background-image: url(../images/reason2.jpg);
         @include bg-cover();
         height: 460px;
         transform: translateY(-20px);
@@ -122,7 +126,7 @@
     transform: translateY(-20px)
 }
 .need-eat-candy{
-    background-image: url(/images/sm-想吃甜點是不需要理由的.svg);
+    background-image: url(../images/sm-想吃甜點是不需要理由的.svg);
     @include bg-cover();
     margin: 90px auto;
     width: 89px;

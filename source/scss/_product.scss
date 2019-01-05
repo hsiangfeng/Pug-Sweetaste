@@ -1,6 +1,6 @@
 @import "mixin";
 .product-banner{
-    background-image: url(/images/banner/banner-2.jpg);
+    background-image: url(../images/banner/banner-2.jpg);
     @include bg-cover();
     height: 496px;
 }

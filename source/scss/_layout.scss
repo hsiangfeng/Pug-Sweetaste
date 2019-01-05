@@ -8,31 +8,10 @@ body {
     &:hover{
         background-color: $hex-sweet;
         color:$white !important;
+        text-decoration: none;
     }
     &.active{
         background-color: $hex-sweet;
         color:$white !important;
-    }
-}
-.footer{
-    background-color: $sweet-cover;
-    .subscription{
-        background-color: $hex-sweet;
-    }
-    input{
-        border:0px !important;
-    }
-    .input-group-text{
-        background-color:$white !important;
-        color:$hex-sweet;
-    }
-    .copyright{
-        color:$hex-sweet;
-    }
-    .footers-text{
-        color:$hex-sweet;
-    }
-    a{
-        color:$hex-sweet;
     }
 }

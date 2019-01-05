@@ -3,8 +3,75 @@ block navbar
     - var path = 'product.html'
     include layout/navbar.pug
 block content
-    .product-banner
-    p
-    | 1234
+    section.container.p-0
+        .product-banner
+    section.container.px-0.hex-candy
+        .row.no-gutters
+            .col-md-4
+                .list-group.text-center.py-4.py-md-0.px-md-2
+                    .h4.text-sweet-cover.font-weight-bold.bg-hex-sweet.py-3.m-0 甜點類別
+                    a.list-group-item.list-group-item-action.active.font-weight-bold.h4(href="") 
+                        | 所有甜點
+                        .badge.badge-hex-sweet.badge-pill 48
+                    a.list-group-item.list-group-item-action.h4(href="") 
+                        | 本日精選
+                        .badge.badge-hex-sweet.badge-pill 10
+                    a.list-group-item.list-group-item-action.h4(href="") 
+                        | 人氣推薦
+                        .badge.badge-hex-sweet.badge-pill 26
+                    a.list-group-item.list-group-item-action.h4(href="") 
+                        | 新品上市
+                        .badge.badge-hex-sweet.badge-pill 12
+                    a.list-group-item.list-group-item-action.disabled.h4(href="") 
+                        | 消失品
+                        .badge.badge-hex-sweet.badge-pill 0
+            .col-md-8
+                .row.no-gutters
+                    .col-md-6.pb-4
+                        .card.text-center
+                            .card-img
+                                <img class="card-img-top" src="./images/choice-list/item1.jpg" alt="Card image cap" width="300px" hight="315px">
+                                .today-hot 今日推薦
+                            .card-body
+                                .product.d-flex.justify-content-between
+                                    h5.card-title.w-100.border-right 焦糖馬卡龍
+                                    p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
+                                a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
+                    .col-md-6.pb-4
+                        .card.text-center
+                            .card-img
+                                <img class="card-img-top" src="./images/choice-list/item2.jpg" alt="Card image cap" width="300px" hight="315px">
+                                .today-hot 今日推薦
+                            .card-body
+                                .product.d-flex.justify-content-between
+                                    h5.card-title.w-100.border-right 焦糖馬卡龍
+                                    p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
+                                a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
+                    .col-md-6.pb-4
+                        .card.text-center
+                            .card-img
+                                <img class="card-img-top" src="./images/choice-list/item3.jpg" alt="Card image cap" width="300px" hight="315px">
+                                .today-hot 今日推薦
+                            .card-body
+                                .product.d-flex.justify-content-between
+                                    h5.card-title.w-100.border-right 焦糖馬卡龍
+                                    p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
+                                a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
+                nav(aria-label='Page navigation example')
+                        ul.pagination.pagination-lg.justify-content-center
+                            li.page-item.disabled
+                                a.page-link(href='#', aria-label='Previous')
+                                    span(aria-hidden='true') «
+                                    span.sr-only Previous
+                            li.page-item.active
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#', aria-label='Next')
+                                    span(aria-hidden='true') »
+                                    span.sr-only Next
 block footer
     include layout/footer.pug

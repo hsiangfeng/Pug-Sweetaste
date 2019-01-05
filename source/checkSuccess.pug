@@ -1,0 +1,19 @@
+extend layout/layout.pug
+block navbar
+    - var path = "checkSucess.html"
+    include layout/navbar.pug
+block content
+    section.cartSuccess.container.hex-candy
+        .row.justify-content-center.align-items-center.h-100
+            .col-md-4.h-50
+                .process-success.d-flex.justify-content-between
+                    .line
+                    .circle.success.border-0.fas.fa-check-circle
+                    .circle.success.border-0.fas.fa-check-circle
+                    .circle.success.border-0.fas.fa-check-circle
+                .d-flex.justify-content-center.align-items.center.flex-column
+                    img.img-fluid.mx-auto.my-5(src="./images/lg-付款成功.svg", alt="" width="190px")
+                    br
+                    a.btn.btn-sweet.btn-lg.text-hex-sweet.font-weight-bold(href='index.html') 繼續逛逛
+block footer
+    include layout/footer.pug

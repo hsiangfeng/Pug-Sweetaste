@@ -1,0 +1,91 @@
+extend layout/layout.pug
+block navbar
+    - var path = "checkOut1.html"
+    include layout/navbar.pug
+block content
+    section.container.hex-candy.p-0
+        .row.no-gutters.justify-content-center
+            .col-md-12
+                .row
+                    .col-md-8
+                        form.bg-hex-sweet.text-white(action="checkOut2.html")
+                            .form-group.pt-7.px-7.m-0
+                                .form-row
+                                    .form-group.col-md-6.col-6
+                                        h3 運送
+                                    .form-group.col-md-6.col-6.d-flex.align-items-center
+                                        .process.d-flex.justify-content-between.w-100
+                                            .line
+                                            .circle.active
+                                            .circle
+                                            .circle
+                                .form-row
+                                    .form-group.col-md-6.col-6.h5
+                                        label(for='first') 姓氏
+                                        input#first.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='王')
+                                    .form-group.col-md-6.col-6.h5
+                                        label(for='name') 名子
+                                        input#name.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='大明')
+                                .form-group.h5
+                                    label(for='tel') 電話
+                                    input#tel.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='tel', placeholder='0912-345-678')
+                                .h5 地址
+                                .form-row.h5
+                                    .form-group.col-md-6.col-6.mb-1
+                                        select#inputState.form-control.form-control-lg.rounded-0.bg-sweet-cover
+                                            option(selected='') 高雄市
+                                            option 台北市
+                                    .form-group.col-md-6.col-6.mb-1
+                                        select#inputState.form-control.form-control-lg.rounded-0.bg-sweet-cover
+                                            option(selected='') 三民區
+                                            option 新興區
+                                    .form-group.col-md-12.col-12
+                                        input#inputAddress.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='幸福路 520號')
+                            button.btn.btn-sweet.btn-lg.btn-block.rounded-0.text-hex-sweet(type='submit') 送出
+                    .col-md-4.d-none.d-md-block
+                        .card.text-center.border-0.text-hex-sweet
+                            .card-header.border-0.h3.p-5.bg-sweet-cover
+                                | 訂單摘要
+                            .card-body
+                                .d-flex.justify-content-between
+                                    p.card-title
+                                        | 小計
+                                    p.card-text
+                                        | NT$ 2,700
+                                .d-flex.justify-content-between
+                                    p.card-title
+                                        | 運費
+                                    p.card-text
+                                        | NT$ 300
+                                .d-flex.justify-content-between.font-weight-bold.h5
+                                    p.card-title
+                                        | 總計
+                                    p.card-text
+                                        | NT$ 3,000
+                        .card.text-center.border-0.text-hex-sweet
+                            .card-header.border-0.h3.p-5.bg-sweet-cover
+                                | 購物清單
+                            .card-body
+                                .d-flex.align-items-center
+                                    .card-title
+                                        img.img-fluid.mr-4(src="./images/choice-list/item1.jpg", alt="" width="120px" height="80px")
+                                    .card-text
+                                        | 焦糖馬卡龍（2）
+                                        br
+                                        | NT$ 900
+                                .d-flex.align-items-center
+                                    p.card-title
+                                        img.img-fluid.mr-4(src="./images/choice-list/item1.jpg", alt="" width="120px" height="80px")
+                                    p.card-text
+                                        | 焦糖馬卡龍（2）
+                                        br
+                                        | NT$ 900
+                                .d-flex.align-items-center
+                                    p.card-title
+                                        img.img-fluid.mr-4(src="./images/choice-list/item1.jpg", alt="" width="120px" height="80px")
+                                    p.card-text
+                                        | 焦糖馬卡龍（2）
+                                        br
+                                        | NT$ 900
+block footer
+    include layout/footer.pug

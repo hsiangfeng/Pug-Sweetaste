@@ -3,9 +3,9 @@ block navbar
     - var path = 'index.html'
     include layout/navbar.pug
 block content
-    section.container
+    section.container.px-0
         .banner
-        .row.d-flex.justify-content-center.align-items-center
+        .row.d-flex.justify-content-center.align-items-center.no-gutters
             .col-md-8
                 .row.no-gutters.banner-btn
                     a.col-4(href="#")
@@ -19,13 +19,13 @@ block content
                         .banner-bg-new
     
     section.hex-candy
-        .container
-            .row
+        .container.px-0
+            .row.no-gutters
                 .col-md-6.d-md-none.reason1-md.d-flex.justify-content-center
-                            img(src="/images/sm-橫式-為什麼選擇了做甜點.svg", alt="").img-fluid.my-6
+                            img(src="../images/sm-橫式-為什麼選擇了做甜點.svg", alt="").img-fluid.my-6
         .reason1
-            .container
-                .row
+            .container.px-0
+                .row.no-gutters
                     .col-md-6.reason1-bg
                         .reason1-img
                     .col-md-6.reason1-bg
@@ -33,15 +33,15 @@ block content
                             p 青山依舊在，幾度夕陽紅。慣看秋月春風。
                             p 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                             p 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                        img(src="/images/lg-為什麼選擇了做甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
+                        img(src="../images/lg-為什麼選擇了做甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
     section.hex-candy
         .container
                 .row
                     .col-md-6.d-md-none.reason2-md.d-flex.justify-content-center
-                                img(src="/images/sm-橫式-為什麼一定要吃甜點.svg", alt="").img-fluid.my-6
+                                img(src="./images/sm-橫式-為什麼一定要吃甜點.svg", alt="").img-fluid.my-6
         .reason2
-            .container
-                .row.d-flex.flex-row-reverse
+            .container.px-0
+                .row.d-flex.flex-row-reverse.no-gutters
                     .col-md-6.reason2-bg
                         .reason2-img
                     .col-md-6.reason2-bg
@@ -49,40 +49,40 @@ block content
                             p 青山依舊在，幾度夕陽紅。慣看秋月春風。
                             p 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                             p 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                        img(src="/images/lg-為什麼一定要吃甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
+                        img(src="./images/lg-為什麼一定要吃甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
     .need-eat-candy.d-flex.justify-content-center.align-items-center
     section.hex-candy
         .container
             .row
-                .col-md-4
+                .col-md-4.py-2
                     .card.text-center
                         .card-img
-                            <img class="card-img-top" src="/images/choice-list/item1.jpg" alt="Card image cap" width="300px" hight="315px">
+                            <img class="card-img-top" src="./images/choice-list/item1.jpg" alt="Card image cap" width="300px" hight="315px">
                             .today-hot 今日推薦
                         .card-body
                             .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right 焦糖馬卡龍
+                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
-                .col-md-4
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
+                .col-md-4.py-2
                     .card.text-center
                         .card-img
-                            <img class="card-img-top" src="/images/choice-list/item2.jpg" alt="Card image cap" width="300px" hight="315px">
+                            <img class="card-img-top" src="./images/choice-list/item2.jpg" alt="Card image cap" width="300px" hight="315px">
                             .today-hot 今日推薦
                         .card-body
                             .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right 焦糖馬卡龍
+                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
-                .col-md-4
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
+                .col-md-4.py-2
                     .card.text-center
                         .card-img
-                            <img class="card-img-top" src="/images/choice-list/item3.jpg" alt="Card image cap" width="300px" hight="315px">
+                            <img class="card-img-top" src="./images/choice-list/item3.jpg" alt="Card image cap" width="300px" hight="315px">
                             .today-hot 今日推薦
                         .card-body
                             .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right 焦糖馬卡龍
+                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='#') 加入購物車
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
 block footer
     include layout/footer.pug
