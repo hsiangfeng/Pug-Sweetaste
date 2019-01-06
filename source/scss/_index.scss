@@ -3,6 +3,9 @@
     background-image: url(../images/banner/banner.jpg);
     @include bg-cover();
     height: 496px;
+    @media (max-width:768px) {
+        height: 277px;
+    }
 }
 .banner-bg-today{
     position: relative;
@@ -63,18 +66,21 @@
             position: relative;
             writing-mode: horizontal-tb;
             right: 0px;
+            line-height: normal;
         }
     }
     .reason1-img{
         background-image: url(../images/reason1.jpg);
         @include bg-cover();
         height: 460px;
-        transform: translateY(-20px);
+        margin-top:-20px;
+        //transform: translateY(-20px);
         @media (max-width:768px){
             height: 260px;
             position: relative;
             writing-mode: horizontal-tb;
-            transform: translateY(0px);
+            margin-top:0px;
+            //transform: translateY(0px);
             right: 0px;
         }
     }
@@ -102,6 +108,7 @@
             position: relative;
             writing-mode: horizontal-tb;
             right: 0px;
+            line-height: normal;
         }
     }
     .reason2-img{
@@ -117,7 +124,7 @@
             right: 0px;
         }
     }
-    img{
+    .sweet-text-img{
         right: 40px;
         position: absolute;
     }
@@ -132,7 +139,7 @@
     width: 89px;
     height: 328px;
 }
-.card-img{
+.card-images{
     position: relative;
     .today-hot{
         position: absolute;
@@ -144,5 +151,13 @@
         height: 107px;
         width: 36px;
         line-height: 36px;
+    }
+    .add-like-list{
+        position: absolute;
+        top: 19px;
+        right: 20px;
+        font-size: 20px;
+        color: $hex-sweet;
+        cursor: pointer;
     }
 }

@@ -7,16 +7,16 @@ mixin link(name,url)
 		li.nav-item.font-weight-bold
 			a.nav-link.topmain.p-6(href=url)
 				| #{name}
-nav.navbar.navbar-expand-lg.navbar-light.p-0.p-md-6.d-flex.align-items-center.justify-content-between
+nav.navbar.navbar-expand-lg.navbar-light.py-6.p-md-6.d-flex.align-items-center.justify-content-between
 	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
 		span.navbar-toggler-icon
 	a.navbar-brand.mx-auto(href='index.html')
 		img.mx-auto.d-none.d-md-block(src='./images/logo-all-dark.svg', alt='', height='40px')
 		img.d-block.d-md-none(src='./images/logotype.svg', alt='', height='17px')
-	a.d-md-none.text-hex-sweet.p-6(href="cart.html")
+	a.d-md-none.text-hex-sweet.p-2(href="cart.html")
 		.fas.fa-shopping-cart
 	#navbarNavDropdown.collapse.navbar-collapse
-		ul.navbar-nav.ml-auto
+		ul.navbar-nav.ml-auto.text-center
 			each item in menu.list
 				+link(item.name,item.url)
 			li.nav-item.font-weight-bold.d-none.d-md-block

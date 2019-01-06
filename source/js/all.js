@@ -13,4 +13,28 @@ $(document).ready(function () {
         $('.btn-e-invoice').toggleClass('active');
         $('.btn-invoice-addr').toggleClass('active');
     });
+    $('.like-heart-1').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-1 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
+    $('.like-heart-2').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-2 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
+    $('.like-heart-3').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-3 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
+    $('.like-heart-4').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-4 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
+    $('.like-heart-5').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-5 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
+    $('.like-heart-6').on('click', function (e) { 
+        e.preventDefault();
+        $('.like-heart-6 i').toggleClass('far fa-heart').toggleClass('fas fa-heart');
+    });
 });

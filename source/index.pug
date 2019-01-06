@@ -22,7 +22,7 @@ block content
         .container.px-0
             .row.no-gutters
                 .col-md-6.d-md-none.reason1-md.d-flex.justify-content-center
-                            img(src="./images/sm-橫式-為什麼選擇了做甜點.svg", alt="").img-fluid.my-6
+                            img(src="./images/sm-橫式-為什麼選擇了做甜點.svg", alt="" width="226px").img-fluid.my-6
         .reason1
             .container.px-0
                 .row.no-gutters
@@ -33,12 +33,12 @@ block content
                             p 青山依舊在，幾度夕陽紅。慣看秋月春風。
                             p 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                             p 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                        img(src="./images/lg-為什麼選擇了做甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
+                        img(src="./images/lg-為什麼選擇了做甜點.svg", alt="" width="89px").d-none.d-md-block.sweetImg.sweet-text-img
     section.hex-candy
         .container
                 .row
                     .col-md-6.d-md-none.reason2-md.d-flex.justify-content-center
-                                img(src="./images/sm-橫式-為什麼一定要吃甜點.svg", alt="").img-fluid.my-6
+                                img(src="./images/sm-橫式-為什麼一定要吃甜點.svg", alt="" width="226px").img-fluid.my-6
         .reason2
             .container.px-0
                 .row.d-flex.flex-row-reverse.no-gutters
@@ -49,40 +49,50 @@ block content
                             p 青山依舊在，幾度夕陽紅。慣看秋月春風。
                             p 一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
                             p 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                        img(src="./images/lg-為什麼一定要吃甜點.svg", alt="" width="89px" hight="308px").d-none.d-md-block.sweetImg
-    .need-eat-candy.d-flex.justify-content-center.align-items-center
+                        img(src="./images/lg-為什麼一定要吃甜點.svg", alt="" width="89px").d-none.d-md-block.sweetImg.sweet-text-img
+    img(src="./images/sm-想吃甜點是不需要理由的.svg", alt="" width="89px").img-fluid.mx-auto.my-6.d-none.d-md-block
+    img(src="./images/sm-橫式-想吃甜點是不需要理由的.svg", alt="" width="226px").img-fluid.mx-auto.my-6.d-block.d-md-none
     section.hex-candy
         .container
             .row
                 .col-md-4.py-2
                     .card.text-center
-                        .card-img
-                            <img class="card-img-top" src="./images/choice-list/item1.jpg" alt="Card image cap" width="300px" hight="315px">
+                        .card-images
+                            img(src="./images/choice-list/item1.jpg" alt="Card image cap" height="315px").img-fluid
                             .today-hot 今日推薦
-                        .card-body
-                            .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
-                                p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                .col-md-4.py-2
+                            .add-like-list
+                                .like-heart-1
+                                    i.far.fa-heart
+                        .card-body.p-0
+                            .product.d-flex.justify-content-betweenp
+                                h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
+                                p.card-text.font-weight-bold.h5.p-3.text-hex-sweet.w-100 NT$ 450
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
+                .col-md-4.py-2.d-none.d-md-block
                     .card.text-center
-                        .card-img
-                            <img class="card-img-top" src="./images/choice-list/item2.jpg" alt="Card image cap" width="300px" hight="315px">
+                        .card-images
+                            img(src="./images/choice-list/item2.jpg" alt="Card image cap" height="315px").img-fluid
                             .today-hot 今日推薦
-                        .card-body
+                            .add-like-list
+                                .like-heart-2
+                                    i.far.fa-heart
+                        .card-body.p-0
                             .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
-                                p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                .col-md-4.py-2
+                                h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
+                                p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
+                .col-md-4.py-2.d-none.d-md-block
                     .card.text-center
-                        .card-img
-                            <img class="card-img-top" src="./images/choice-list/item3.jpg" alt="Card image cap" width="300px" hight="315px">
+                        .card-images
+                            img(src="./images/choice-list/item3.jpg" alt="Card image cap" height="315px").img-fluid
                             .today-hot 今日推薦
-                        .card-body
+                            .add-like-list
+                                .like-heart-3
+                                    i.far.fa-heart
+                        .card-body.p-0
                             .product.d-flex.justify-content-between
-                                h5.card-title.w-100.border-right.text-hex-sweet 焦糖馬卡龍
-                                p.card-text.font-weight-bold.h5.text-hex-sweet.w-100 NT$ 450
-                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.font-weight-bold.btn-lg(href='cart.html') 加入購物車
+                                h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
+                                p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
+                            a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
 block footer
     include layout/footer.pug
