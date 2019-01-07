@@ -18,45 +18,46 @@ block content
             img(src="./images/logo-all-dark.svg", alt="", srcset="" width= "215px")
     section.container.hex-candy
         .row
-            .col-md-8.px-0
-                form.bg-hex-sweet.text-white(action="checkOut3.html")
-                    .form-group.pt-7.px-7.m-0
-                        .form-row
-                            .form-group.col-md-6
-                                h3 信用卡資訊
-                            .form-group.col-md-6.d-flex.align-items-center
-                                .process.d-flex.justify-content-between.w-100
-                                    .line
-                                    .circle.success.border-0.fas.fa-check-circle
-                                    .circle.active
-                                    .circle
-                        .form-group
-                            label(for='bank') 信用卡卡號
-                            .input-group
-                                input#bank.form-control.form-control-lg.rounded-0.border-0.bg-sweet-cover(type='text', placeholder='9012-3456-7890-1234')
-                                .input-group-prepend.bg-sweet-cover.border-0
-                                    .input-group-text.border-0.bg-sweet-cover.text-hex-sweet
-                                        i.fas.fa-money-check-alt
-                        .h5 持卡人姓名
-                        .form-row
-                            .form-group.col-md-6.col-6.h5
-                                input#first.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='王')
-                            .form-group.col-md-6.col-6.h5
-                                input#name.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='大明')
-                        .h5 有效日期
-                        .form-row.h5
-                            .form-group.col-md-6.col-6.mb-1
-                                select.form-control.form-control-lg.rounded-0.bg-sweet-cover
-                                    option(selected='') 月
-                                    option 12
-                            .form-group.col-md-6.col-6.mb-1
-                                select.form-control.form-control-lg.rounded-0.bg-sweet-cover
-                                    option(selected='') 年
-                                    option 23
-                            .form-group.col-md-6.col-6
-                                label(for='behind') 背後末三碼
-                                input#behind.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='520')
-                    button.btn.btn-sweet.btn-lg.btn-block.rounded-0.text-hex-sweet.font-weight-bold(type='submit') 下一步
+            .col-md-8
+                .cart-row-margin
+                    form.bg-hex-sweet.text-white(action="checkOut3.html")
+                        .form-group.pt-7.px-7.m-0
+                            .form-row
+                                .form-group.col-md-6
+                                    h3 信用卡資訊
+                                .form-group.col-md-6.d-flex.align-items-center
+                                    .process.d-flex.justify-content-between.w-100
+                                        .line
+                                        .circle.success.border-0.fas.fa-check-circle
+                                        .circle.active
+                                        .circle
+                            .form-group
+                                label(for='bank') 信用卡卡號
+                                .input-group
+                                    input#bank.form-control.form-control-lg.rounded-0.border-0.bg-sweet-cover(type='text', placeholder='9012-3456-7890-1234')
+                                    .input-group-prepend.bg-sweet-cover.border-0
+                                        .input-group-text.border-0.bg-sweet-cover.text-hex-sweet
+                                            i.fas.fa-money-check-alt
+                            .h5 持卡人姓名
+                            .form-row
+                                .form-group.col-md-6.col-6.h5
+                                    input#first.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='王')
+                                .form-group.col-md-6.col-6.h5
+                                    input#name.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='大明')
+                            .h5 有效日期
+                            .form-row.h5
+                                .form-group.col-md-6.col-6.mb-1
+                                    select.form-control.form-control-lg.rounded-0.bg-sweet-cover
+                                        option(selected='') 月
+                                        option 12
+                                .form-group.col-md-6.col-6.mb-1
+                                    select.form-control.form-control-lg.rounded-0.bg-sweet-cover
+                                        option(selected='') 年
+                                        option 23
+                                .form-group.col-md-6.col-6
+                                    label(for='behind') 背後末三碼
+                                    input#behind.form-control.form-control-lg.rounded-0.bg-sweet-cover(type='text', placeholder='520')
+                        button.btn.btn-sweet.btn-lg.btn-block.rounded-0.text-hex-sweet.font-weight-bold(type='submit') 下一步
             .col-md-4.d-none.d-md-block
                 .card.text-center.border-0.text-hex-sweet
                     .card-header.border-0.h3.p-5.bg-sweet-cover
