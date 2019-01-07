@@ -1,3 +1,7 @@
+window.onload = function(){
+    $('#load-page').fadeOut(1000);
+}
+
 $(document).ready(function () {
     $('.btn-e-invoice').click(function (event) { 
         event.preventDefault();

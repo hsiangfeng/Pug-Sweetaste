@@ -4,3 +4,11 @@
     @include bg-cover();
     height: 496px;
 }
+.product-banner-header{
+    position: relative;
+}
+.product-image-text{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}

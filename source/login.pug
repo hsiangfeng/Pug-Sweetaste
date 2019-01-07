@@ -3,15 +3,28 @@ block navbar
     - var path = "login.html"
     include layout/navbar.pug
 block content
+    .load-page#load-page
+        .page-logo
+            img(src="./images/logo-dark.svg", alt="", srcset="" height= "50px" width= "50px")
+        .page-text
+            .preloader-box L
+            .preloader-box O
+            .preloader-box A
+            .preloader-box D
+            .preloader-box .
+            .preloader-box .
+            .preloader-box .
+        .logo
+            img(src="./images/logo-all-dark.svg", alt="", srcset="" width= "215px")
     section.container.px-0.hex-candy
-        .row.no-gutters.justify-content-center
+        .row.justify-content-center
             .col-md-10
                 .row.no-gutters.flex-md-row-reverse
                     .col-md-6.py-md-4
                         h2.py-2.text-white.text-center.font-weight-bold.py-7.bg-hex-sweet.d-block.d-md-none.m-0 會員登入
                         .community.p-6.text-center.text-hex-sweet.bg-sweet-cover
                             h5.d-none.d-md-block —— 連結社群帳號 ——
-                            .row.no-gutters
+                            .row
                                 .col-4.col-md-12.my-3
                                     button.btn.btn-light.btn-block.btn-lg
                                         img.img-fluid(src="./images/ic-facebook-logotype.svg", alt="facebook" width="108")

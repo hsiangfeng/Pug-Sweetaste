@@ -3,11 +3,22 @@ block navbar
     - var path = "checkOut3.html"
     include layout/navbar.pug
 block content
-    section.container.hex-candy.p-0
-        .row.no-gutters.justify-content-center
-            .col-md-12
-                .row.no-gutters
-                    .col-md-8
+    .load-page#load-page
+        .page-logo
+            img(src="./images/logo-dark.svg", alt="", srcset="" height= "50px" width= "50px")
+        .page-text
+            .preloader-box L
+            .preloader-box O
+            .preloader-box A
+            .preloader-box D
+            .preloader-box .
+            .preloader-box .
+            .preloader-box .
+        .logo
+            img(src="./images/logo-all-dark.svg", alt="", srcset="" width= "215px")
+    section.container.hex-candy
+                .row
+                    .col-md-8.px-0
                         form.bg-hex-sweet.text-white.invoice-form(action="checkSuccess.html")
                             .form-group.pt-7.px-7.m-0
                                 .form-row

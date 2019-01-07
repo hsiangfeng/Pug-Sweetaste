@@ -33,7 +33,7 @@ gulp.task('pug', function buildHTML() {
         }))
         .pipe($.pug({
             //若為false將會去除空格
-            pretty: true
+            pretty: false
         }))
         .pipe(gulp.dest('./public/'))
         .pipe(browserSync.stream())

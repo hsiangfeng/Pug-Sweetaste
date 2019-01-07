@@ -3,12 +3,26 @@ block navbar
     - var path = 'product.html'
     include layout/navbar.pug
 block content
-    section.container.p-0
+    .load-page#load-page
+        .page-logo
+            img(src="./images/logo-dark.svg", alt="", srcset="" height= "50px" width= "50px")
+        .page-text
+            .preloader-box L
+            .preloader-box O
+            .preloader-box A
+            .preloader-box D
+            .preloader-box .
+            .preloader-box .
+            .preloader-box .
+        .logo
+            img(src="./images/logo-all-dark.svg", alt="", srcset="" width= "215px")
+    section.container.px-0.px-md-3.product-banner-header
         .product-banner
-    section.container.px-md-0.hex-candy
-        .row.no-gutters
+        img(src="./images/lg-為什麼選擇了做甜點.svg" width="89px" alt="").product-image-text
+    section.container.hex-candy
+        .row
             .col-md-4
-                .list-group.text-center.py-4.py-md-0.px-md-2
+                .list-group.text-center.mb-5
                     .h4.text-sweet-cover.font-weight-bold.bg-hex-sweet.py-3.m-0 甜點類別
                     a.list-group-item.list-group-item-action.active.font-weight-bold.h4(href="") 
                         | 所有甜點
@@ -26,8 +40,8 @@ block content
                         | 消失品
                         .badge.badge-hex-sweet.badge-pill 0
             .col-md-8
-                .row.no-gutters
-                    .col-md-6.px-4.pb-4
+                .row
+                    .col-md-6.pb-4
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item1.jpg" alt="Card image cap" height="315px").img-fluid
@@ -40,7 +54,7 @@ block content
                                 h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
                             a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                    .col-md-6.px-4.pb-4
+                    .col-md-6.pb-4
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item2.jpg" alt="Card image cap" height="315px").img-fluid
@@ -53,7 +67,7 @@ block content
                                 h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
                             a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                    .col-md-6.px-4.pb-4
+                    .col-md-6.pb-4
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item3.jpg" alt="Card image cap" height="315px").img-fluid
@@ -66,7 +80,7 @@ block content
                                 h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
                             a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                    .col-md-6.px-4.pb-4.d-none.d-md-block
+                    .col-md-6.pb-4.d-none.d-md-block
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item1.jpg" alt="Card image cap" height="315px").img-fluid
@@ -79,7 +93,7 @@ block content
                                 h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
                             a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                    .col-md-6.px-4.pb-4.d-none.d-md-block
+                    .col-md-6.pb-4.d-none.d-md-block
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item2.jpg" alt="Card image cap" height="315px").img-fluid
@@ -92,7 +106,7 @@ block content
                                 h5.card-title.m-0.w-100.border-right.text-hex-sweet.p-3 焦糖馬卡龍
                                 p.card-text.font-weight-bold.h5.text-hex-sweet.w-100.p-3 NT$ 450
                             a.btn.btn-sweet-cover.btn-block.text-hex-sweet.rounded-0.font-weight-bold.btn-lg(href='cart.html') 加入購物車
-                    .col-md-6.px-4.pb-4.d-none.d-md-block
+                    .col-md-6.pb-4.d-none.d-md-block
                         .card.text-center
                             .card-images
                                 img(src="./images/choice-list/item3.jpg" alt="Card image cap" height="315px").img-fluid
