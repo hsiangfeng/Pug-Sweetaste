@@ -26,11 +26,14 @@
 <img src="https://i.imgur.com/rHQoMmF.png" width="500px">
 ### 結帳完成
 <img src="https://i.imgur.com/plg3WbZ.png" width="500px">
+### 加載動畫
+<img src="https://i.imgur.com/8uaAD2A.gif" width="500px">
 ## 使用技術&練習技術
 - Bootstrap 4 (修改Bootstrap SCSS及自訂樣式)
 - SCSS
 - jQuery
 - pug
 - Gulp 4
+- CSS3動畫
 ## 聲明
 本作品內圖片、內容等，純粹為個人練習前端使用，不做任何商業用途。 
