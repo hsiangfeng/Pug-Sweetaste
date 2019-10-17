@@ -14,6 +14,13 @@ let options = minimist(process.argv.slice(2), envOptions)
 //目前開發狀態
 console.log(options);
 
+// copyPWA
+gulp.task('copyPWA', () => {
+    return gulp.src('./source/manifest.json')
+      .pipe(gulp.src('./source/sw.js'))
+      .pipe(gulp.dest('./public/'));
+});
+
 //remove public
 gulp.task('clean', function () {
     return gulp.src('./public', { read: false })
@@ -42,7 +49,7 @@ gulp.task('pug', function buildHTML() {
 gulp.task('sass', function () {
     //針對瀏覽器加入前輟
     let plugins = [
-        autoprefixer({ browsers: ['last 1 version'] }),
+        autoprefixer(),
     ];
 
     return gulp.src('./source/scss/**/*.scss')
@@ -104,9 +111,10 @@ gulp.task('watch', gulp.parallel('browser-sync', function () {
     gulp.watch('./source/**/*.pug', gulp.series('pug'));
     gulp.watch('./source/scss/*.scss', gulp.series('sass'));
     gulp.watch('./source/js/*.js', gulp.series('babel'));
+    gulp.watch('./source/sw.js', gulp.series('copyPWA'));
 }))
 
-gulp.task('bulid', gulp.series($.sequence('clean', 'pug', 'sass', 'babel', 'image-min')))
+gulp.task('bulid', gulp.series($.sequence('clean', 'pug', 'sass', 'babel', 'copyPWA', 'image-min')))
 //4.0要加入gulp.series
 //default gulp
-gulp.task('default', gulp.series('pug', 'sass', 'babel', 'image-min', 'watch'))
+gulp.task('default', gulp.series('pug', 'sass', 'babel', 'copyPWA','image-min', 'watch'))
